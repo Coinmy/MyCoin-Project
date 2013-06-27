@@ -15,8 +15,8 @@ mycoin - 一个基于Litecoin的新型P2P货币。
 
 官方网站：
 ===================
-- 官网：coinmy.org
-- 论坛：forum.coinmy.org
+- 官网：http://www.mycoin.org
+- 论坛：http://forum.mycoin.org
 
 捐助：
 ===================
@@ -44,8 +44,8 @@ Download Client：
 
 Official Sites:
 ===================
-- Homepage: mycoin.org
-- Forum: forum.mycoin.org
+- Homepage: http://www.mycoin.org
+- Forum: http://forum.mycoin.org
 
 Donation：
 ===================
