@@ -1,5 +1,6 @@
 简介：
 ===================
+
 mycoin - 一个基于Litecoin的新型P2P货币。
  - 每 2 分钟产生一个区块
  - 每1575000个区块产出减半（5年）
@@ -26,9 +27,9 @@ LTC: LfHYtdyJAhykNoasSY4iva6zkYvdudLyWv
 
 
 
-
 Introduction:
 ===================
+
 MyCoin - a lite version of Litecoin used scrypt as a proof of work scheme.
  - 2 minute block targets
  - subsidy halves in 1575k blocks (5 years)
