@@ -81,7 +81,7 @@ void Shutdown(void* parg)
         delete pwalletMain;
         CreateThread(ExitTimeout, NULL);
         Sleep(50);
-        printf("mycoin exited\n\n");
+        printf("Mycoin exited\n\n");
         fExit = true;
 #ifndef QT_GUI
         // ensure non UI client get's exited here, but let Bitcoin-Qt reach return 0; in bitcoin.cpp
@@ -136,7 +136,7 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to mycoind / RPC client
-            std::string strUsage = _("mycoin version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("Mycoin version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
                   "  mycoind [options]                     " + "\n" +
                   "  mycoind [options] <command> [params]  " + _("Send command to -server or mycoind") + "\n" +
@@ -332,11 +332,9 @@ bool AppInit2()
     // ********************************************************* Step 2: parameter interactions
 
     fTestNet = GetBoolArg("-testnet");
-    // mycoin: Keep irc seeding on by default for now.
-//    if (fTestNet)
-//    {
-        SoftSetBoolArg("-irc", true);
-//    }
+
+    SoftSetBoolArg("-irc", false);
+
 
     if (mapArgs.count("-bind")) {
         // when specifying an explicit binding address, you want to listen on it
